@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search City</title>
+    <link href="https://cdn.jsdelivr.net/npm/h8k-design@latest/dist/index.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/npm/h8k-design@latest/dist/assets/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/h8k-components/dist/h8k-components/h8k-components.esm.js"
+            type="module"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/h8k-components/dist/h8k-components/h8k-components.js"></script>
+</head>
+
+<body>
+<!--HTML content goes here-->
+<h8k-navbar header="Image carousel"></h8k-navbar>
+<div class="carousel-container w-50 mx-auto mt-40">
+    <img class="carousel-img"
+         id="carousel-img" data-testid="carousel-img"
+         src="/assets/images/img-0.jpg"
+         height="100%" width="100%">
+    <div class="previous" id="previous" data-testid="previous"></div>
+    <div class="next" id="next" data-testid="next"></div>
+    <div class="indicators">
+        <ul class="indicator-list">
+            <li value="1" id="one" data-testid="one"></li>
+            <li value="2" id="two" data-testid="two"></li>
+            <li value="3" id="three" data-testid="three"></li>
+            <li value="4" id="four" data-testid="four"></li>
+            <li value="5" id="five" data-testid="five"></li>
+        </ul>
+    </div>
+    <div class="slide-input">
+        <input type="checkbox" class="test" id="slide" data-testid="slide"> Slide
+    </div>
+</div>
+</body>
+<!-- HMR and test infrastructure - DO NOT EDIT -->
+<script src="./bundle.js"></script>
+</html>
